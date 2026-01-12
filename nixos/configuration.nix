@@ -152,6 +152,7 @@
 
   hardware.graphics.enable = true;
 
+  programs.direnv.enable = true;
   
   environment.systemPackages = with pkgs; [
     pciutils
