@@ -173,6 +173,7 @@
     qt6.full
     gdb
     ninja
+    gcc_multi
     arduino	];
   
   systemd.services.anydesk = {
