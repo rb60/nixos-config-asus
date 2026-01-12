@@ -170,6 +170,7 @@
     vdhcoapp
     asusctl
     qtcreator
+    qt6.full
     arduino	];
   
   systemd.services.anydesk = {
