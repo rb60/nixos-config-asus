@@ -171,6 +171,7 @@
     asusctl
     qtcreator
     qt6.full
+    gdb
     arduino	];
   
   systemd.services.anydesk = {
