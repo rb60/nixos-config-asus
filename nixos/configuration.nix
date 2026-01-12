@@ -168,7 +168,8 @@
     anydesk
     motrix
     vdhcoapp
-    asusctl];
+    asusctl
+    qtcreator];
   
   systemd.services.anydesk = {
     description = "AnyDesk Service";
