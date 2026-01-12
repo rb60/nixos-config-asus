@@ -172,6 +172,7 @@
     qtcreator
     qt6.full
     gdb
+    ninja
     arduino	];
   
   systemd.services.anydesk = {
