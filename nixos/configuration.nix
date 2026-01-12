@@ -169,7 +169,8 @@
     motrix
     vdhcoapp
     asusctl
-    qtcreator];
+    qtcreator
+    arduino	];
   
   systemd.services.anydesk = {
     description = "AnyDesk Service";
