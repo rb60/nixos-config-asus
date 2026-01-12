@@ -167,7 +167,8 @@
     openshot-qt
     anydesk
     motrix
-    vdhcoapp];
+    vdhcoapp
+    asusctl];
   
   systemd.services.anydesk = {
     description = "AnyDesk Service";
