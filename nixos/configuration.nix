@@ -179,7 +179,8 @@
     gcc_multi
     arduino	
     mission-center
-    glmark2];
+    glmark2
+    amdgpu_top];
   
   systemd.services.anydesk = {
     description = "AnyDesk Service";
