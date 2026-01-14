@@ -50,12 +50,20 @@
 	};
 
 	
-	dconf.settings."org/gnome/desktop/wm/preferences".button-layout = "minimize,maximize,close";
-	dconf.settings."org/gnome/Console" = 
+	dconf.settings =
 	{
-		custom-font = "Agave Nerd Font 10";
-		font-scale = 1.2;
-		use-system-font = false;
+		"org/gnome/desktop/wm/preferences".button-layout = "minimize,maximize,close";
+		"org/gnome/settings-daemon/plugins/media-keys/custom-keybindings" = [
+      			"/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
+    		];
+  		"/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/" = 
+		{
+			binding = "<Primary><Alt>t";
+    			command = "kitty";
+    			name = "open-terminal";
+		};
+		
+
 
 	};
 	
