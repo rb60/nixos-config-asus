@@ -178,7 +178,8 @@
     ninja
     gcc_multi
     arduino	
-    mission-center];
+    mission-center
+    glmark2];
   
   systemd.services.anydesk = {
     description = "AnyDesk Service";
