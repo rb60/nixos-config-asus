@@ -53,17 +53,14 @@
 	dconf.settings =
 	{
 		"org/gnome/desktop/wm/preferences".button-layout = "minimize,maximize,close";
-		"org/gnome/settings-daemon/plugins/media-keys/custom-keybindings" = [
-      			"/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
-    		];
-  		"/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/" = 
-		{
-			binding = "<Primary><Alt>t";
-    			command = "kitty";
-    			name = "open-terminal";
-		};
-		
-
+		"org/gnome/settings-daemon/plugins/media-keys/custom-keybindings" = {
+      			custom0 = 
+			{
+				binding = "<Primary><Alt>t";
+    				command = "kitty";
+    				name = "open-terminal";
+			};
+    		};
 
 	};
 	
