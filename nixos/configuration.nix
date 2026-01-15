@@ -153,6 +153,11 @@
   hardware.graphics.enable = true;
 
   programs.direnv.enable = true;
+
+  nixpkgs.config.permittedInsecurePackages = [
+                "qtwebengine-5.15.19"
+              ];
+
   
   environment.systemPackages = with pkgs; [
     pciutils
