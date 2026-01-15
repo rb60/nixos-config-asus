@@ -181,7 +181,7 @@
     mission-center
     glmark2
     amdgpu_top
-    gnome-shell-extension-simpleweather];
+    gnomeExtensions.simpleweather];
   
   systemd.services.anydesk = {
     description = "AnyDesk Service";
