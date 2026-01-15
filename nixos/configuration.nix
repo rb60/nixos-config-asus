@@ -23,7 +23,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
   
   powerManagement.enable = true;
-  services.logind.lidSwitch = "ignore";
+  services.logind.settings.Login.HandleLidSwitch = "ignore";
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
@@ -67,11 +67,14 @@
 
 
   # Enable the X11 windowing system.
+
+  services.displayManager.gdm.enable = true;
+  services.displayManager.gdm.wayland = false;
+  services.desktopManager.gnome.enable = true;
+
+
   services.xserver = {
     enable = true;
-    displayManager.gdm.enable = true;
-    displayManager.gdm.wayland = false;
-    desktopManager.gnome.enable = true;
     xkb.layout = "us,ua";
     xkb.options = "grp:win_space_toggle";
   };
