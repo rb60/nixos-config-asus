@@ -173,7 +173,7 @@
     vdhcoapp
     asusctl
     qtcreator
-    qt6.full
+    qt6
     gdb
     ninja
     gcc_multi
