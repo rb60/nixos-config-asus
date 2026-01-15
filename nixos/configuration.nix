@@ -175,7 +175,6 @@
     libgccjit    
     clang
     libreoffice
-    openshot-qt
     anydesk
     motrix
     vdhcoapp
