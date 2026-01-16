@@ -191,7 +191,7 @@
     {
     	enable = true;
 	platformTheme = "gnome";
-	style = "adwita";
+	style = "adwaita";
     };
 
   
