@@ -67,7 +67,7 @@
 
 
   # Enable the X11 windowing system.
-
+  boot.plymouth.enable = false;
   services.displayManager.gdm.enable = true;
   services.displayManager.gdm.wayland = false;
   services.desktopManager.gnome.enable = true;
