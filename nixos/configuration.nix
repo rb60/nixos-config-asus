@@ -177,7 +177,7 @@
     qt6.qtbase
     libsForQt5.qt5.qtwayland
     qt6.qtwayland
-    qt6Packages.qadwaitadecorations
+    adwaita-qt
     gdb
     ninja
     gcc_multi
