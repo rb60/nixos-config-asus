@@ -192,7 +192,7 @@
     	enable = true;
 	platformTheme = "gnome";
 	style = "adwita";
-    }
+    };
 
   
   systemd.services.anydesk = {
