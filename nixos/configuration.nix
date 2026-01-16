@@ -186,7 +186,8 @@
     arduino	
     mission-center
     glmark2
-    amdgpu_top];
+    amdgpu_top
+    gimp];
 
   environment.variables = {
     QT_QPA_PLATFORM = "xcb";
