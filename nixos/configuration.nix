@@ -34,7 +34,7 @@
   };
 
   # Use latest kernel.
-  boot.kernelPackages = pkgs.linuxPackages_6_16;
+  boot.kernelPackages = pkgs.linuxPackages_6_18;
   #boot.extraModulePackages = [ config.boot.kernelPackages.rtl8192eu];
 
   networking.hostName = "nixos"; # Define your hostname.
