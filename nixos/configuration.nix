@@ -34,7 +34,7 @@
   };
 
   # Use latest kernel.
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.kernelPackages = pkgs.linuxPackages_6_16;
   #boot.extraModulePackages = [ config.boot.kernelPackages.rtl8192eu];
 
   networking.hostName = "nixos"; # Define your hostname.
@@ -68,7 +68,6 @@
 
   # Enable the X11 windowing system.
 
-  boot.plymouth.enable = false;
   services.displayManager.gdm.enable = true;
   services.displayManager.gdm.wayland = false;
   services.desktopManager.gnome.enable = true;
