@@ -56,7 +56,7 @@
   # Select internationalisation properties.
   i18n.defaultLocale = "uk_UA.UTF-8";
   # console = {
-  #   font = "Lat2-Terminus16";
+  # font  font = "Lat2-Terminus16";
   #   keyMap = "us";
   #   useXkbConfig = true; # use xkb.options in tty.
   # };
@@ -68,6 +68,7 @@
 
   # Enable the X11 windowing system.
 
+  boot.plymouth.enable = false;
   services.displayManager.gdm.enable = true;
   services.displayManager.gdm.wayland = false;
   services.desktopManager.gnome.enable = true;
