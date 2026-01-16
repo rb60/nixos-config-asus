@@ -65,18 +65,12 @@
     nerd-fonts.agave
   ];
 
-
-  # Enable the X11 windowing system.
-  boot.plymouth.enable = false;
   services.displayManager.gdm.enable = true;
-  services.displayManager.gdm.wayland = false;
   services.desktopManager.gnome.enable = true;
 
-
-  services.xserver = {
-    enable = true;
-    xkb.layout = "us,ua";
-    xkb.options = "grp:win_space_toggle";
+  services.xserver.xkb = {
+    layout = "us,ua";
+    options = "grp:win_space_toggle";
   };
 
   services.envfs.enable = true;
