@@ -175,6 +175,10 @@
     asusctl
     qtcreator
     qt6.qtbase
+    libsForQt5.qt5.qtwayland
+    kdePackages.qtwayland 
+    qgnomeplatform 
+    adwaita-qt
     gdb
     ninja
     gcc_multi
@@ -182,6 +186,14 @@
     mission-center
     glmark2
     amdgpu_top];
+
+    qt =
+    {
+    	enable = true;
+	platformTheme = "gnome";
+	style = "adwita";
+    }
+
   
   systemd.services.anydesk = {
     description = "AnyDesk Service";
@@ -189,7 +201,7 @@
     wantedBy = [ "multi-user.target" ];
     serviceConfig = {
       Type = "simple";
-      ExecStart = "${pkgs.anydesk}/bin/anydesk --service"; # Важливий момент
+      ExecStart = "${pkgs.anydesk}/bin/anydesk --service"; 
       Restart = "on-failure";
     };
   };
