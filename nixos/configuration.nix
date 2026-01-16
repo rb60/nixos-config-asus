@@ -189,7 +189,7 @@
     amdgpu_top];
 
   environment.variables = {
-    QT_WAYLAND_DECORATION = "adwaita";
+    QT_QPA_PLATFORM = "xcb";
   };   
 
   
