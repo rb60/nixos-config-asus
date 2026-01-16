@@ -176,7 +176,6 @@
     qtcreator
     qt6.qtbase
     libsForQt5.qt5.qtwayland
-    libsForQt5.qc-adwaita-style
     qt6.qtwayland
     qt6Packages.qadwaitadecorations
     gdb
