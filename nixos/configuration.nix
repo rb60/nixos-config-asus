@@ -187,8 +187,7 @@
     arduino	
     mission-center
     glmark2
-    amdgpu_top
-    gnomeExtensions.simpleweather];
+    amdgpu_top];
   
   systemd.services.anydesk = {
     description = "AnyDesk Service";
