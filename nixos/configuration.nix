@@ -176,9 +176,9 @@
     qtcreator
     qt6.qtbase
     libsForQt5.qt5.qtwayland
-    kdePackages.qtwayland 
-    qgnomeplatform 
-    adwaita-qt
+    libsForQt5.qc-adwaita-style
+    qt6.qtwayland
+    qt6Packages.qadwaitadecorations
     gdb
     ninja
     gcc_multi
@@ -187,12 +187,9 @@
     glmark2
     amdgpu_top];
 
-    qt =
-    {
-    	enable = true;
-	platformTheme = "gnome";
-	style = "adwaita";
-    };
+  environment.variables = {
+    QT_WAYLAND_DECORATION = "adwaita";
+  };   
 
   
   systemd.services.anydesk = {
