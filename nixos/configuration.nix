@@ -174,7 +174,7 @@
     vdhcoapp
     asusctl
     qtcreator
-    qt6 
+    qt6.full 
     libsForQt5.qt5.qtwayland
     qadwaitadecorations
     qt6.qtwayland
