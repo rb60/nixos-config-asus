@@ -189,7 +189,7 @@
 
   environment.variables = {
     QT_QPA_PLATFORM = "xcb";
-    QT_QPA_PLATFORMTHEME = "xdgdesktopportal";
+    QT_QPA_PLATFORMTHEME = "generic";
   };   
 
   
