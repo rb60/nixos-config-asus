@@ -183,7 +183,8 @@
     gimp
     pinta
     qtcreator
-    qt6.qtbase];
+    qt6.qtbase
+    gtk3];
 
   environment.variables = {
     QT_QPA_PLATFORM = "xcb";
