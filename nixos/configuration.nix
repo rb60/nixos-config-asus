@@ -155,7 +155,7 @@
   #             "qtwebengine-5.15.19"
   #           ];
 
-  
+  programs.dconf.enable = true;  
   environment.systemPackages = with pkgs; [
     pciutils
     vim
