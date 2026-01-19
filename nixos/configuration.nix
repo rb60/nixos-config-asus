@@ -181,7 +181,9 @@
     glmark2
     amdgpu_top
     gimp
-    pinta];
+    pinta
+    qtcreator
+    qt6.qtbase];
 
   environment.variables = {
     QT_QPA_PLATFORM = "xcb";
