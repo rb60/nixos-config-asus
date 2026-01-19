@@ -173,13 +173,6 @@
     motrix
     vdhcoapp
     asusctl
-    qtcreator
-    qt6.qtbase
-    libsForQt5.qt5.qtwayland
-    qadwaitadecorations
-    qt6.qtwayland
-    adwaita-qt
-    adwaita-qt6
     gdb
     ninja
     gcc_multi
