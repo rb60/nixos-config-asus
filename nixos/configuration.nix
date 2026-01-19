@@ -184,6 +184,7 @@
     pinta
     qtcreator
     qt6.qtbase
+    gsettings-desktop-schemas
     gtk3];
 
   environment.variables = {
