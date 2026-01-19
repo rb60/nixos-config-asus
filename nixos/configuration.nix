@@ -187,7 +187,8 @@
     mission-center
     glmark2
     amdgpu_top
-    gimp];
+    gimp
+    pinta];
 
   environment.variables = {
     QT_QPA_PLATFORM = "xcb";
