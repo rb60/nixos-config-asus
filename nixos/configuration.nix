@@ -185,7 +185,8 @@
     qtcreator
     qt6.qtbase
     gsettings-desktop-schemas
-    gtk3];
+    gtk3
+    vlc];
 
   environment.variables = {
     QT_QPA_PLATFORM = "xcb";
