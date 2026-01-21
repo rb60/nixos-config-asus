@@ -187,7 +187,9 @@
     gsettings-desktop-schemas
     gtk3
     vlc
-    tlp];
+    tlp
+    ffmpegthumbnailer];
+
 
   environment.variables = {
     QT_QPA_PLATFORM = "xcb";
