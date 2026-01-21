@@ -187,7 +187,7 @@
     gsettings-desktop-schemas
     gtk3
     vlc
-    powerstat];
+    tlp];
 
   environment.variables = {
     QT_QPA_PLATFORM = "xcb";
