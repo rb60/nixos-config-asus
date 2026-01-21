@@ -193,6 +193,7 @@
 
   environment.variables = {
     QT_QPA_PLATFORM = "xcb";
+    QT_STYLE_OVERRIDE = "fusion";
     QT_QPA_PLATFORMTHEME = "generic";
   };   
 
