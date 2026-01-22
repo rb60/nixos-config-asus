@@ -188,7 +188,8 @@
     gtk3
     vlc
     tlp
-    ffmpegthumbnailer];
+    ffmpegthumbnailer
+    neofetch];
 
 
   environment.variables = {
