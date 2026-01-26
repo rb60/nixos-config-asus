@@ -190,7 +190,8 @@
     vlc
     tlp
     ffmpegthumbnailer
-    neofetch];
+    neofetch
+    ntfs3g];
 
 
   environment.variables = {
