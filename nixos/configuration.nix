@@ -165,7 +165,7 @@
     dconf-editor
     python3
     zoom-us
-    discord
+    legcord
     qbittorrent
     libgccjit    
     clang
