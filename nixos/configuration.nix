@@ -191,7 +191,8 @@
     tlp
     ffmpegthumbnailer
     neofetch
-    ntfs3g];
+    ntfs3g
+    nmap];
 
 
   environment.variables = {
