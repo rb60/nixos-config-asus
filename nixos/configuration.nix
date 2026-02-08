@@ -192,7 +192,7 @@
     ffmpegthumbnailer
     neofetch
     ntfs3g
-    nmap];
+    kdePackages.kdenlive];
 
 
   environment.variables = {
