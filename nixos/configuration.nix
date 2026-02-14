@@ -192,7 +192,8 @@
     ffmpegthumbnailer
     neofetch
     ntfs3g
-    kdePackages.kdenlive];
+    kdePackages.kdenlive
+    viber];
 
 
   environment.variables = {
