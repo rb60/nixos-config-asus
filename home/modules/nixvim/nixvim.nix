@@ -31,6 +31,7 @@
 				current_line = true;
 			};
 			virtual_text = false;
+			update_in_insert = true;
 		};
 
 	};
