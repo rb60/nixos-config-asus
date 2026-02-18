@@ -186,6 +186,7 @@
     qtcreator
     qt6.qtbase
     qt6.qmake
+    cmake
     gsettings-desktop-schemas
     gtk3
     vlc
