@@ -184,7 +184,7 @@
     gimp
     pinta
     qtcreator
-    qt6.qtbase
+    qt6.full
     gsettings-desktop-schemas
     gtk3
     vlc
