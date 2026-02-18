@@ -195,7 +195,8 @@
     neofetch
     ntfs3g
     kdePackages.kdenlive
-    viber];
+    viber
+    thunderbird];
 
 
   environment.variables = {
