@@ -184,7 +184,7 @@
     gimp
     pinta
     qtcreator
-    qt6.base
+    qt6.qtbase
     qt6.qmake
     gsettings-desktop-schemas
     gtk3
