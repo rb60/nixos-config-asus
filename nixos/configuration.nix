@@ -156,6 +156,10 @@
   #             "qtwebengine-5.15.19"
   #           ];
 
+  virtualisation.virtualbox.host.enable = true;
+  virtualisation.virtualbox.host.enableExtensionPack = true;
+  users.extraGroups.vboxusers.members = [ "tima" ];
+
   programs.dconf.enable = true;  
   environment.systemPackages = with pkgs; [
     pciutils
