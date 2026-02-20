@@ -196,7 +196,8 @@
     ntfs3g
     kdePackages.kdenlive
     viber
-    thunderbird];
+    thunderbird
+    jdk];
 
 
   environment.variables = {
