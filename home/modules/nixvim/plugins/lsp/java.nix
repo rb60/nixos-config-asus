@@ -1,8 +1,6 @@
-{pkgs, ...}:
 {
-	programs.nixvim.plugins.lsp.servers.java_language_server = 
+	programs.nixvim.plugins.lsp.servers.jdtls = 
 	{
 		enable = true;
-		cmd = ["${pkgs.java-language-server}/share/java/java-language-server/lang_server_linux.sh"];
 	};
 }
