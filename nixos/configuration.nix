@@ -197,7 +197,8 @@
     kdePackages.kdenlive
     viber
     thunderbird
-    jdk];
+    jdk
+    virtualbox];
 
 
   environment.variables = {
