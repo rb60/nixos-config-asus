@@ -203,7 +203,8 @@
     kdePackages.kdenlive
     viber
     thunderbird
-    jdk];
+    jdk
+    copyq];
 
 
   environment.variables = {
