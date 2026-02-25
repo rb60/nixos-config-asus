@@ -63,6 +63,7 @@
 			command = "kitty";
 			name = "open-terminal";
 		};
+		"org/gnome/desktop/wm/keybindings".switch-input-source = "['<Alt>space']";
 
 	};
 	
