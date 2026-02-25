@@ -170,6 +170,7 @@
     prusa-slicer
     dconf-editor
     python3
+    python3Packages.beautifulsoup4
     zoom-us
     legcord
     qbittorrent
