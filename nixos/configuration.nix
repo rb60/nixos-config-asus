@@ -69,9 +69,9 @@
   services.displayManager.gdm.enable = true;
   services.desktopManager.gnome.enable = true;
 
-  services.xserver = {
-    xkb.layout = "us,ua";
-    xkbOptions = "grp:win_space_toggle";
+  services.xserver.xkb = {
+    layout = "us,ua";
+    options = "grp:win_space_toggle";
   };
 
   services.envfs.enable = true;
