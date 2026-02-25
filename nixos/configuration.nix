@@ -71,7 +71,7 @@
 
   services.xserver.xkb = {
     layout = "us,ua";
-    options = "grp:win_space_toggle";
+    options = "grp:alt_shift_toggle";
   };
 
   services.envfs.enable = true;
