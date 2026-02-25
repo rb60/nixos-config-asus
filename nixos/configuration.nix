@@ -71,7 +71,6 @@
 
   services.xserver.xkb = {
     layout = "us,ua";
-    options = "grp:win_space_toggle";
   };
 
   services.envfs.enable = true;
