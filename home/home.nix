@@ -25,6 +25,12 @@
 		./modules/kitty/kitty.nix
 	];
 
+	programs.direnv =
+	{
+		enable = true;
+		enableBashIntegration = true;
+	};
+
 	systemd.user.services.qbittorrent = {
 		Unit = {
 			Description = "qBitTorrent";
