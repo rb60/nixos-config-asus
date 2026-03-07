@@ -151,6 +151,7 @@
   hardware.graphics.enable = true;
 
   programs.direnv.enable = true;
+  programs.direnv.enableBashIntegration = true;
 
   #nixpkgs.config.permittedInsecurePackages = [
   #             "qtwebengine-5.15.19"
