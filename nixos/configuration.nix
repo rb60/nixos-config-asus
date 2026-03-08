@@ -207,7 +207,8 @@
     jdk
     copyq
     canon-capt
-    canon-cups-ufr2];
+    canon-cups-ufr2
+    cups-bjnp];
 
 
   environment.variables = {
