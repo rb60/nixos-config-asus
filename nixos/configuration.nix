@@ -205,7 +205,8 @@
     viber
     thunderbird
     jdk
-    copyq];
+    copyq
+    canon-capt];
 
 
   environment.variables = {
