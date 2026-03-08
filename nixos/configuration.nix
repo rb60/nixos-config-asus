@@ -206,7 +206,8 @@
     thunderbird
     jdk
     copyq
-    canon-capt];
+    canon-capt
+    canon-cups-ufr2];
 
 
   environment.variables = {
