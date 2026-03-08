@@ -105,7 +105,11 @@
     extraGroups = [ "wheel" "input" "networkmanager" "lp" "scanner"]; # Enable ‘sudo’ for the user.
   };
 
-  services.printing.enable = true;
+  services.printing =
+  {
+  	enable = true;
+	drivers = [pkgs.canon-cups-ufr2];
+  };
 
 
 
