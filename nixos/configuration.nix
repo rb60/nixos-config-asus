@@ -102,8 +102,10 @@
   #Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.tima = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "input" "networkmanager" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "wheel" "input" "networkmanager" "lp" "scanner"]; # Enable ‘sudo’ for the user.
   };
+
+  services.printing.enable = true;
 
 
 
