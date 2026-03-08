@@ -108,7 +108,9 @@
   services.printing =
   {
   	enable = true;
-	drivers = [pkgs.canon-cups-ufr2];
+	drivers = [pkgs.canon-cups-ufr2
+			pkgs.canon-capt
+			pkgs.cups-bjnp];
   };
 
 
