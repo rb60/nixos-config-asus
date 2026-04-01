@@ -170,6 +170,8 @@
   virtualisation.virtualbox.host.enableKvm = false;
   users.extraGroups.vboxusers.members = [ "tima" ];
 
+  programs.nix-ld.enable = true;
+
   programs.dconf.enable = true;  
   environment.systemPackages = with pkgs; [
     pciutils
