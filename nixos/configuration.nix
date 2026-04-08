@@ -219,7 +219,8 @@
     canon-capt
     canon-cups-ufr2
     cups-bjnp
-    pstree];
+    pstree
+    gnomeExtensions.clipboard-indicator];
 
 
   environment.variables = {
