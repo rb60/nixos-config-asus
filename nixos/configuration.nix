@@ -220,8 +220,18 @@
     canon-cups-ufr2
     cups-bjnp
     pstree
-    gnomeExtensions.clipboard-indicator];
+    gnomeExtensions.clipboard-indicator
+    tor-browser];
 
+
+  services.tor = {
+  enable = true;
+  client.enable = true;
+  hiddenServices."lab4-server" = {
+    map = [ { port = 80; toHost = "127.0.0.1"; toPort = 80; } ];
+      version = 3;
+    };
+  };
 
   environment.variables = {
     QT_QPA_PLATFORM = "xcb";
