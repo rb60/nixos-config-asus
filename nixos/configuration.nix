@@ -225,13 +225,21 @@
 
 
   services.tor = {
-  enable = true;
-  client.enable = true;
-  hiddenServices."lab4-server" = {
-    map = [ { port = 80; toHost = "127.0.0.1"; toPort = 80; } ];
+    enable = true;
+    client.enable = true;
+    relay.onionServices."lab4-server" = {
       version = 3;
+      map = [
+        {
+          port = 80; # Порт, який буде відкритий в мережі Tor (.onion:80)
+          target = {
+            addr = "127.0.0.1";
+            port = 80; # Порт, на якому працює твій python-сервер
+          };
+        }
+      ];
     };
-  };
+  }; 
 
   environment.variables = {
     QT_QPA_PLATFORM = "xcb";
