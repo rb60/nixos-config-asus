@@ -221,7 +221,8 @@
     cups-bjnp
     pstree
     gnomeExtensions.clipboard-indicator
-    tor-browser];
+    tor-browser
+    lact];
 
 
   services.tor = {
