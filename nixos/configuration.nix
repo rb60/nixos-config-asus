@@ -224,6 +224,7 @@
     tor-browser
     lact];
 
+  services.lact.enable = true;
 
   services.tor = {
     enable = true;
