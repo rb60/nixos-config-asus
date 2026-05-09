@@ -157,7 +157,7 @@
   };
 
   hardware.graphics.enable = true;
-  hardware.amdgpu.overdrive = true;
+  hardware.amdgpu.overdrive.enable = true;
 
   programs.direnv.enable = true;
   programs.direnv.enableBashIntegration = true;
