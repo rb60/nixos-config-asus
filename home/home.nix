@@ -31,29 +31,6 @@
 		enableBashIntegration = true;
 	};
 
-	systemd.user.services.qbittorrent = {
-		Unit = {
-			Description = "qBitTorrent";
-			After = ["graphical-session-pre.target" "run-media-tima-Elements.mount"];
-			PartOf = ["graphical-session.target"];
-		};
-
-		Service = {
-			ExecStartPre = pkgs.writeShellScript "wait-for-mount" ''
-			until [ -d "/run/media/tima/Elements" ]
-			do
-				sleep 2
-			done
-			sleep 15
-			'';
-			ExecStart = "${pkgs.qbittorrent}/bin/qbittorrent";
-			Restart = "on-failure";
-		};
-
-		Install = {
-			WantedBy = ["graphical-session.target"];
-		};
-	};
 
 	
 	dconf.settings =
