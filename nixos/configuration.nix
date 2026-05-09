@@ -157,6 +157,7 @@
   };
 
   hardware.graphics.enable = true;
+  hardware.amdgpu.overdrive = true;
 
   programs.direnv.enable = true;
   programs.direnv.enableBashIntegration = true;
@@ -224,7 +225,10 @@
     tor-browser
     lact];
 
-  services.lact.enable = true;
+  services.lact = {
+    enable = true;
+    
+  };
 
   services.tor = {
     enable = true;
