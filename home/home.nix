@@ -35,6 +35,7 @@
   		Unit = {
     			Description = "qBittorrent user service";
     			After = [ "graphical-session.target" ];
+			RequiresMountsFor = [ "/run/media/tima/Elements" ];
   		};
   		Install = {
     			WantedBy = [ "graphical-session.target" ];
