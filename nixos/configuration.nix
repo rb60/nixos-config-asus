@@ -253,19 +253,11 @@
     QT_QPA_PLATFORMTHEME = "generic";
   };   
 
-  
+
+  services.qbittorrent.enable = true;
   
 
-  systemd.user.services.qbitTorrent = 
-  {
-    description = "QBitTorrent Service";
-    after = [ "network.target" ];
-    wantedBy = [ "default.target" ];
-    serviceConfig = {
-      Type = "simple";
-      ExecStart = "${pkgs.qbittorrent}/bin/qbittorrent";
-    };
-  };
+  
 
 
   
