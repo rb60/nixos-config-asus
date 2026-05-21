@@ -31,6 +31,20 @@
 		enableBashIntegration = true;
 	};
 
+	systemd.user.services.qbittorrent = {
+  		Unit = {
+    			Description = "qBittorrent user service";
+    			After = [ "graphical-session.target" ];
+  		};
+  		Install = {
+    			WantedBy = [ "graphical-session.target" ];
+  		};
+  		Service = {
+    			ExecStart = "${pkgs.qbittorrent}/bin/qbittorrent";
+    			Restart = "on-failure";
+  		};
+};
+
 
 	
 	dconf.settings =
