@@ -259,7 +259,7 @@
   systemd.user.services.qbitTorrent = 
   {
     description = "QBitTorrent Service";
-    after = [ "network.target" "run-media-tima-Elements.mount"];
+    after = [ "network.target" ];
     wantedBy = [ "default.target" ];
     serviceConfig = {
       Type = "simple";
