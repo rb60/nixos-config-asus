@@ -254,16 +254,19 @@
   };   
 
   
-  systemd.services.anydesk = {
-    description = "AnyDesk Service";
-    after = [ "network.target" "systemd-user-sessions.service" ];
-    wantedBy = [ "multi-user.target" ];
+  
+
+  systemd.user.services.qbitTorrent = 
+  {
+    description = "QBitTorrent Service";
+    after = [ "network.target" "run-media-tima-Elements.mount"];
+    wantedBy = [ "default.target" ];
     serviceConfig = {
       Type = "simple";
-      ExecStart = "${pkgs.anydesk}/bin/anydesk --service"; 
-      Restart = "on-failure";
+      ExecStart = "${pkgs.qbittorrent}/bin/qbittorrent";
     };
   };
+
 
   
 
