@@ -245,7 +245,13 @@
         }
       ];
     };
-  }; 
+  };
+
+  fileSystems."/mnt/Elements" = {
+    device = "/dev/disk/by-uuid/AA30094630091B49";
+    fsType = "ntfs";
+    options = [ "nofail" "x-systemd.device-timeout=5s" ];
+  };
 
   environment.variables = {
     QT_QPA_PLATFORM = "xcb";
