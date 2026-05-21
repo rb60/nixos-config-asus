@@ -253,14 +253,9 @@
     QT_QPA_PLATFORMTHEME = "generic";
   };   
 
-
-  services.qbittorrent.enable = true;
   
 
-  
-
-
-  
+    
 
 
   # Some programs need SUID wrappers, can be configured further or are
