@@ -66,8 +66,9 @@
     nerd-fonts.agave
   ];
 
-  services.displayManager.gdm.enable = true;
-  services.desktopManager.gnome.enable = true;
+  services.displayManager.sddm.enable = true;
+  services.displayManager.sddm.wayland.enable = true;
+  services.desktopManager.plasma6.enable = true;
 
   services.xserver.xkb = {
     layout = "us,ua";
@@ -221,30 +222,23 @@
     canon-cups-ufr2
     cups-bjnp
     pstree
-    gnomeExtensions.clipboard-indicator
     tor-browser
-    lact];
+    lact
+    wl-clipbord
+    hardinfo2
+    kdePackages.kcalc 
+    kdePackages.kcharselect 
+    kdePackages.kclock 
+    kdePackages.kcolorchooser
+    kdePackages.ksystemlog 
+    kdePackages.sddm-kcm 
+    kdePackages.partitionmanager
+    wayland-utils
+    ];
 
   services.lact = {
     enable = true;
     
-  };
-
-  services.tor = {
-    enable = true;
-    client.enable = true;
-    relay.onionServices."lab4-server" = {
-      version = 3;
-      map = [
-        {
-          port = 80; # Порт, який буде відкритий в мережі Tor (.onion:80)
-          target = {
-            addr = "192.168.0.104";
-            port = 80; # Порт, на якому працює твій python-сервер
-          };
-        }
-      ];
-    };
   };
 
   fileSystems."/mnt/Elements" = {
