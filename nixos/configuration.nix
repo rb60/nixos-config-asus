@@ -174,7 +174,7 @@
 
   programs.nix-ld.enable = true;
 
-  programs.dconf.enable = true;  
+  #programs.dconf.enable = true;  
   environment.systemPackages = with pkgs; [
     pciutils
     vim
@@ -247,11 +247,11 @@
     options = [ "nofail" "x-systemd.device-timeout=5s" ];
   };
 
-  environment.variables = {
-    QT_QPA_PLATFORM = "xcb";
-    QT_STYLE_OVERRIDE = "fusion";
-    QT_QPA_PLATFORMTHEME = "generic";
-  };   
+  #environment.variables = {
+    #QT_QPA_PLATFORM = "xcb";
+    #QT_STYLE_OVERRIDE = "fusion";
+    #QT_QPA_PLATFORMTHEME = "generic";
+  #};   
 
   
 
