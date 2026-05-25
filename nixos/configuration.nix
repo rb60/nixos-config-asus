@@ -224,7 +224,7 @@
     pstree
     tor-browser
     lact
-    wl-clipbord
+    wl-clipboard
     hardinfo2
     kdePackages.kcalc 
     kdePackages.kcharselect 
