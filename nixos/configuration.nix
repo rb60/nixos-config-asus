@@ -234,7 +234,9 @@
     kdePackages.sddm-kcm 
     kdePackages.partitionmanager
     wayland-utils
+    py7zr
     ];
+
 
   services.lact = {
     enable = true;
