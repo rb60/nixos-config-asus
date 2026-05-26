@@ -235,6 +235,7 @@
     kdePackages.partitionmanager
     wayland-utils
     py7zr
+    unrar-free
     ];
 
 
