@@ -238,6 +238,7 @@
     unrar-free
     tree
     wget
+    unzip
     ];
 
 
