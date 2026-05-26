@@ -236,6 +236,7 @@
     wayland-utils
     py7zr
     unrar-free
+    tree
     ];
 
 
