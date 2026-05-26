@@ -237,6 +237,7 @@
     py7zr
     unrar-free
     tree
+    wget
     ];
 
 
