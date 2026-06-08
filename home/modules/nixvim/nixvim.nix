@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
 	imports = [ ./plugins/bufferline.nix 
 		    ./plugins/lualine.nix
@@ -36,6 +37,8 @@
 			virtual_text = false;
 			update_in_insert = true;
 		};
+
+		nixpkgs.source = pkgs.path;
 
 	};
 }
