@@ -191,7 +191,6 @@
     libreoffice
     anydesk
     motrix
-    vdhcoapp
     asusctl
     gdb
     ninja
