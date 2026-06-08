@@ -210,7 +210,7 @@
     vlc
     tlp
     ffmpegthumbnailer
-    neofetch
+    hyfetch
     ntfs3g
     kdePackages.kdenlive
     viber
