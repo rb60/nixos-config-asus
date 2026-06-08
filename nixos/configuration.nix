@@ -238,6 +238,7 @@
     tree
     wget
     unzip
+    kdePackages.filelight
     ];
 
 
