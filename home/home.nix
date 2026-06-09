@@ -43,6 +43,7 @@
   		Service = {
     			ExecStart = "${pkgs.qbittorrent}/bin/qbittorrent";
     			Restart = "on-failure";
+			TimeoutStopSec = "15s";
   		};
 };
 
