@@ -17,6 +17,7 @@
 		
 		plugins.cmp-nvim-lsp.enable = true;
 		plugins.direnv.enable = true;
+		plugins.csvview.enable = true;
 
 		clipboard.providers.xclip.enable = true;
 		keymaps = [
