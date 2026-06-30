@@ -64,8 +64,8 @@
   
   fonts.packages = with pkgs; [
     nerd-fonts.agave
+    nerd-fonts.comic-shanns-mono
     xkcd-font
-    google-fonts
   ];
 
   services.displayManager.sddm.enable = true;
