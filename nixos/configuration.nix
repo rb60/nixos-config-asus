@@ -71,7 +71,7 @@
     version = "1.0";
     src = fetchurl {
       url = "https://github.com/google/fonts/raw/main/ofl/neucha/Neucha.ttf";
-      hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="; 
+      hash = "sha256-eSe9bOCQ+gMoV9y8OtDot2XEYtCnKod5BoEySWtOCH0="; 
     };
     dontUnpack = true;
     installPhase = ''
