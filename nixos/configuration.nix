@@ -66,7 +66,19 @@
     nerd-fonts.agave
     nerd-fonts.comic-shanns-mono
     xkcd-font
-    google-fonts
+    (stdenvNoCC.mkDerivation {
+    pname = "neucha-font";
+    version = "1.0";
+    src = fetchurl {
+      url = "https://github.com/google/fonts/raw/main/ofl/neucha/Neucha.ttf";
+      hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="; 
+    };
+    dontUnpack = true;
+    installPhase = ''
+      mkdir -p $out/share/fonts/truetype
+      cp $src $out/share/fonts/truetype/Neucha.ttf
+    '';
+    })
   ];
 
   services.displayManager.sddm.enable = true;
