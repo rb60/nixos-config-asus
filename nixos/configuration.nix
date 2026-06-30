@@ -71,7 +71,7 @@
     version = "1.0";
     src = fetchurl {
       url = "https://github.com/google/fonts/raw/main/ofl/comicneue/ComicNeue-Regular.ttf";
-      hash = "sha256-eSe9bOCQ+gMoV9y8OtDot2XEYtCnKod5BoEySWtOCH0="; 
+      hash = "sha256-oO5aN8iyfE2wcAE32ShZix4jsAieFUaolhkJF2t3k2A="; 
     };
     dontUnpack = true;
     installPhase = ''
