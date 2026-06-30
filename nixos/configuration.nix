@@ -67,16 +67,16 @@
     nerd-fonts.comic-shanns-mono
     xkcd-font
     (stdenvNoCC.mkDerivation {
-    pname = "neucha-font";
+    pname = "comic-neue-font";
     version = "1.0";
     src = fetchurl {
-      url = "https://github.com/google/fonts/raw/main/ofl/neucha/Neucha.ttf";
+      url = "https://github.com/google/fonts/raw/main/ofl/comicneue/ComicNeue-Regular.ttf";
       hash = "sha256-eSe9bOCQ+gMoV9y8OtDot2XEYtCnKod5BoEySWtOCH0="; 
     };
     dontUnpack = true;
     installPhase = ''
       mkdir -p $out/share/fonts/truetype
-      cp $src $out/share/fonts/truetype/Neucha.ttf
+      cp $src $out/share/fonts/truetype/ComicNeue-Regular.ttf
     '';
     })
   ];
