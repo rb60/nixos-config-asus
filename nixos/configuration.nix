@@ -226,6 +226,8 @@
     tlp
     ffmpegthumbnailer
     fastfetch
+    ipfetch
+    countryfetch
     ntfs3g
     kdePackages.kdenlive
     viber
