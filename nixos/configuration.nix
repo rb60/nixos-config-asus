@@ -176,6 +176,7 @@
   {
     enable = true;
     package = pkgs.ollama-rocm;
+    rocmOverrideGfx = "11.0.2";
     models = "/mnt/Elements/Models";
     loadModels = 
     [ 
