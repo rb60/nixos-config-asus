@@ -179,9 +179,9 @@
     models = "/mnt/Elements/Models";
     loadModels = 
     [ 
-      "llama3.3:8b"
+      "llama3.1:8b"
       "mistral:7b"
-      "qwen2.5:14b"
+      "qwen3.5:9b"
     ];
 
   };
