@@ -172,6 +172,20 @@
     ];
   };
 
+  services.ollama =
+  {
+    enable = true;
+    package = pkgs.ollama-rocm;
+    models = "/mnt/Elements/Models/";
+    loadModels = 
+    [ 
+      "llama3.3:8b"
+      "mistral:7b"
+      "qwen2.5:14b"
+    ];
+
+  };
+
   hardware.graphics.enable = true;
   hardware.amdgpu.overdrive.enable = true;
 
