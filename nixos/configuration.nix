@@ -176,7 +176,7 @@
   {
     enable = true;
     package = pkgs.ollama-rocm;
-    models = "/mnt/Elements/Models/";
+    models = "/mnt/Elements/Models";
     loadModels = 
     [ 
       "llama3.3:8b"
