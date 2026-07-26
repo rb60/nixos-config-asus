@@ -271,6 +271,7 @@
     wget
     unzip
     kdePackages.filelight
+    anki
     ];
 
 
