@@ -273,6 +273,7 @@
     kdePackages.filelight
     anki
     exfatprogs
+    ffmpeg
     ];
 
 
