@@ -272,6 +272,7 @@
     unzip
     kdePackages.filelight
     anki
+    exfatprogs
     ];
 
 
