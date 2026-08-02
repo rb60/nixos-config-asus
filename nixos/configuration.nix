@@ -282,7 +282,7 @@
   };
 
   fileSystems."/mnt/Elements" = {
-    device = "/dev/disk/by-uuid/AA30094630091B49";
+    device = "/dev/disk/by-uuid/7F7F-79EF";
     fsType = "exfat";
     options = [ "nofail" "x-systemd.device-timeout=5s" ];
   };
