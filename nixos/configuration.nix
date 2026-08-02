@@ -283,7 +283,7 @@
 
   fileSystems."/mnt/Elements" = {
     device = "/dev/disk/by-uuid/AA30094630091B49";
-    fsType = "ntfs";
+    fsType = "exfat";
     options = [ "nofail" "x-systemd.device-timeout=5s" ];
   };
 
