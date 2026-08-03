@@ -285,7 +285,14 @@
   fileSystems."/mnt/Elements" = {
     device = "/dev/disk/by-uuid/7F7F-79EF";
     fsType = "exfat";
-    options = [ "nofail" "x-systemd.device-timeout=5s" ];
+    options = [ "nofail"
+		"x-systemd.device-timeout=5s" 
+		"rw"
+      		"uid=1000"  
+      		"gid=100"   
+      		"dmask=022" 
+      		"fmask=133" 
+      	      ];
   };
 
   #environment.variables = {
