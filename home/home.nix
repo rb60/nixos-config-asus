@@ -68,6 +68,7 @@
   			Service = {
     				ExecStart = "${xmppPythonEnv}/bin/python /home/tima/source/python/audioDownloadBot/main.py";
     				Restart = "always";
+				RestartSec = 10;
   			};
 		};
 	};
