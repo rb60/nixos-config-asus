@@ -54,6 +54,7 @@
 				pydantic
 				aiohttp
 				slixmpp
+				systemd-python
       				]);	
 		in{
   			Unit = {
