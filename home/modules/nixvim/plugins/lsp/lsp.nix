@@ -4,6 +4,7 @@
 		./pylsp.nix
 		./html.nix
 		./java.nix
+		./json.nix
 	];
 	programs.nixvim.plugins.lsp = 
 	{
