@@ -274,6 +274,7 @@
     anki
     exfatprogs
     ffmpeg
+    gcc
     ];
 
 
