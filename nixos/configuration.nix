@@ -176,6 +176,9 @@
   {
     enable = true;
     package = pkgs.ollama-rocm;
+    environmentVariables = {
+      HCC_AMDGPU_TARGET = "gfx1102"; 
+    };
     rocmOverrideGfx = "11.0.2";
     models = "/mnt/Elements/Models";
     loadModels = 
