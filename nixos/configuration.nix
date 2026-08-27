@@ -275,6 +275,7 @@
     exfatprogs
     ffmpeg
     gcc
+    yt-dlp
     ];
 
 
