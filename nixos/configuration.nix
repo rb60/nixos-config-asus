@@ -279,6 +279,7 @@
     ffmpeg
     gcc
     yt-dlp
+    gamescope
     ];
 
 
