@@ -280,6 +280,7 @@
     gcc
     yt-dlp
     gamescope
+    racket
     ];
 
 
