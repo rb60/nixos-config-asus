@@ -19,7 +19,7 @@
 		plugins.direnv.enable = true;
 		plugins.csvview.enable = true;
 
-		extraPlugins = with pkgs.VimPlugins;[
+		extraPlugins = with pkgs.vimPlugins;[
 			plantuml-nvim
 		];
 
