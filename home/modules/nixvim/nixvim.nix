@@ -21,7 +21,17 @@
 
 		extraPlugins = [
 			pkgs.vimPlugins.plantuml-nvim
+			pkgs.vimPlugins.libdeflate-nvim
 		];
+
+		extraConfigLua = ''
+			require('plantuml').setup({
+            			base_url = 'https://www.plantuml.com/plantuml',
+            			reload_events = { 'BufWritePre' },
+            			viewer = 'xdg-open',
+            			docker_image = 'plantuml/plantuml-server:tomcat'
+        		})
+    		'';
 
 		clipboard.providers.xclip.enable = true;
 		keymaps = [
