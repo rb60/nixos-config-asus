@@ -19,8 +19,8 @@
 		plugins.direnv.enable = true;
 		plugins.csvview.enable = true;
 
-		extraPlugins = with pkgs.vimPlugins;[
-			plantuml-nvim
+		extraPlugins = [
+			pkgs.vimPlugins.plantuml-nvim
 		];
 
 		clipboard.providers.xclip.enable = true;
