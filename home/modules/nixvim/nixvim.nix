@@ -21,7 +21,7 @@
 
 		extraPlugins = [
 			pkgs.vimPlugins.plantuml-nvim
-			pkgs.vimPlugins.libdeflate-nvim
+			pkgs.vimPlugins.LibDeflate-nvim
 		];
 
 		extraConfigLua = ''
