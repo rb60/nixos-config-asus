@@ -281,6 +281,7 @@
     yt-dlp
     gamescope
     racket
+    plantuml
     ];
 
 
