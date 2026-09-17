@@ -19,6 +19,10 @@
 		plugins.direnv.enable = true;
 		plugins.csvview.enable = true;
 
+		extraPlugins = with pkgs.VimPlugins;[
+			plantuml-nvim
+		];
+
 		clipboard.providers.xclip.enable = true;
 		keymaps = [
 			{
