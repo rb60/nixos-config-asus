@@ -16,6 +16,7 @@
 	{
 		enable = true;
 		colorschemes.rose-pine.enable = true;
+		colorschemes.rose-pine.settings.variant = "moon";
 
 		plugins.cmp-nvim-lsp.enable = true;
 		plugins.direnv.enable = true;
