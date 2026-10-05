@@ -2,7 +2,7 @@
 	programs.nixvim.plugins.markview = 
 	{
 		enable = true;
-		setings.preview =
+		settings.preview =
 		{
 			icon_provider = "devicons";
 		};
