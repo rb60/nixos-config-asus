@@ -8,7 +8,8 @@
 		    ./plugins/toggleterm.nix
 		    ./plugins/image.nix
 		    ./plugins/cmp.nix
-		    ./plugins/lsp/lsp.nix];
+		    ./plugins/lsp/lsp.nix
+		    ./plugins/markview.nix];
 
 
 	programs.nixvim = 
