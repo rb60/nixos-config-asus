@@ -15,7 +15,8 @@
 	programs.nixvim = 
 	{
 		enable = true;
-		
+		colorschemes.rose-pine.enable = true;
+
 		plugins.cmp-nvim-lsp.enable = true;
 		plugins.direnv.enable = true;
 		plugins.csvview.enable = true;
