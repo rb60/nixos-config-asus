@@ -282,6 +282,7 @@
     gamescope
     racket
     plantuml
+    jsonfmt
     ];
 
 
