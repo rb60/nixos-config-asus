@@ -284,6 +284,7 @@
     plantuml
     jsonfmt
     texliveFull
+    ltex-ls
     ];
 
 
