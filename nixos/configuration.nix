@@ -283,6 +283,7 @@
     racket
     plantuml
     jsonfmt
+    texliveFull
     ];
 
 
