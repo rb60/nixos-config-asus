@@ -66,19 +66,7 @@
     nerd-fonts.agave
     nerd-fonts.comic-shanns-mono
     xkcd-font
-    (stdenvNoCC.mkDerivation {
-    pname = "comic-neue-font";
-    version = "1.0";
-    src = fetchurl {
-      url = "https://github.com/google/fonts/raw/main/ofl/comicneue/ComicNeue-Regular.ttf";
-      hash = "sha256-oO5aN8iyfE2wcAE32ShZix4jsAieFUaolhkJF2t3k2A="; 
-    };
-    dontUnpack = true;
-    installPhase = ''
-      mkdir -p $out/share/fonts/truetype
-      cp $src $out/share/fonts/truetype/ComicNeue-Regular.ttf
-    '';
-    })
+    google-fonts
   ];
 
   services.displayManager.sddm.enable = true;
