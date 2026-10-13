@@ -5,7 +5,7 @@
 		./html.nix
 		./java.nix
 		./json.nix
-		./ltex.nix
+		./texlab.nix
 	];
 	programs.nixvim.plugins.lsp = 
 	{
