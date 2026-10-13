@@ -67,6 +67,7 @@
     nerd-fonts.comic-shanns-mono
     xkcd-font
     google-fonts
+    corefonts
   ];
 
   services.displayManager.sddm.enable = true;
