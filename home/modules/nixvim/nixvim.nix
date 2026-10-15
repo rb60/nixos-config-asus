@@ -56,6 +56,13 @@
 			update_in_insert = true;
 		};
 
+		opts = {
+			wrap = true;          
+    			breakindent = true;   
+    			showbreak = "↳ ";     
+    			breakindentopt = "shift:2";
+		};
+
 		nixpkgs.source = pkgs.path;
 
 	};
