@@ -61,6 +61,7 @@
     			breakindent = true;   
     			showbreak = "↳ ";     
     			breakindentopt = "shift:2";
+			number = true;
 		};
 
 		nixpkgs.source = pkgs.path;
