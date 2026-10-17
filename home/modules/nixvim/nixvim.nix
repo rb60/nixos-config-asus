@@ -46,6 +46,14 @@
 					silent = true;
 				};
 			}
+			{
+				action = "p=']^";
+				key = "p";
+			}
+			{
+				action = "P='[^";
+				key = "P";
+			}
 			];
 
 		diagnostic.settings = {
