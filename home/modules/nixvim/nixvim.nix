@@ -77,7 +77,7 @@
 					key = "<C-r>+";
 					action = ''
 					lua function()
-						local clip = vim.fn.getreg('+')
+						local clip = vim.fn.getreg('*')
 						if clip ~= "" then
 							vim.api.nvim_chan_send(vim.b.terminal_job_id, clip)
 						end
