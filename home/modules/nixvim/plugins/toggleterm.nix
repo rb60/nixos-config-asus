@@ -4,7 +4,7 @@
 		enable = true;
 		settings = {
   			direction = "horizontal";
-  			open_mapping = "[[<c-\\>]]";
+  			open_mapping = "[[<c-t>]]";
 		};
 		
 	};
