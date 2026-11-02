@@ -97,9 +97,12 @@
 					key = "<C-r>+";
 					action = ''
 					lua function()
-						local clip = vim.fn.getreg('*')
-						if clip ~= "" then
-							vim.api.nvim_chan_send(vim.b.terminal_job_id, clip)
+						local clipboard_data = vim.g.clipboard.paste['+']()
+						if clipboard_data and #clipboard_data > 0 then
+							local text = table.concat(clipboard_data, "\n")
+							if text ~= "" then
+								vim.api.nvim_chan_send(vim.b.terminal_job_id, text)
+							end
 						end
 					end()
 							'';
