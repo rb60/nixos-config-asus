@@ -95,22 +95,11 @@
 			{
 				mode = "t";
 					key = "<C-r>+";
-					action = ''
-					<cmd>lua function()
-						local clipboard_data = vim.g.clipboard.paste['+']()
-						if clipboard_data and #clipboard_data > 0 then
-							local text = table.concat(clipboard_data, "\n")
-							if text ~= "" then
-								vim.api.nvim_chan_send(vim.b.terminal_job_id, text)
-							end
-						end
-					end()
-					<CR>
-							'';
-				options = {
-					desc = "Paste raw text directly to terminal channel";
-					silent = true;
-					noremap = true;
+					action = ''<cmd>lua local data = vim.g.clipboard.paste['+'](); if data and #data > 0 then local text = table.concat(data, "\n"); if text ~= "" then vim.api.nvim_chan_send(vim.b.terminal_job_id, text) end end<CR>'';
+					options = {
+						desc = "Paste raw text directly to terminal channel";
+						silent = true;
+						noremap = true;
 				};
 			}
 			];
