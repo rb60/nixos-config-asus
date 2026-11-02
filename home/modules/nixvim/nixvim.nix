@@ -36,6 +36,11 @@
         		})
     		'';
 
+		extraPackages = with pkgs; [
+    			wl-clipboard
+    			xclip
+  		];
+
 		clipboard.providers.xclip.enable = true;
 		keymaps = [
 			{
