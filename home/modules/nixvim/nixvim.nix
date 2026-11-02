@@ -96,7 +96,7 @@
 				mode = "t";
 					key = "<C-r>+";
 					action = ''
-					lua function()
+					<cmd>lua function()
 						local clipboard_data = vim.g.clipboard.paste['+']()
 						if clipboard_data and #clipboard_data > 0 then
 							local text = table.concat(clipboard_data, "\n")
@@ -105,6 +105,7 @@
 							end
 						end
 					end()
+					<CR>
 							'';
 				options = {
 					desc = "Paste raw text directly to terminal channel";
