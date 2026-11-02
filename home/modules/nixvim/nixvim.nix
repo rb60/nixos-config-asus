@@ -105,6 +105,7 @@
     			showbreak = "↳ ";     
     			breakindentopt = "shift:2";
 			number = true;
+			clipboard = "unnamedplus";
 		};
 
 		nixpkgs.source = pkgs.path;
