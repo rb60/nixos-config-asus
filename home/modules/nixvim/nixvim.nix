@@ -72,6 +72,23 @@
 					silent = true;
 				};
 			}
+			{
+				mode = "t";
+					key = "<C-r>+";
+					action = ''
+					lua function()
+						local clip = vim.fn.getreg('+')
+						if clip ~= "" then
+							vim.api.nvim_chan_send(vim.b.terminal_job_id, clip)
+						end
+					end()
+							'';
+				options = {
+					desc = "Paste raw text directly to terminal channel";
+					silent = true;
+					noremap = true;
+				};
+			}
 			];
 
 		diagnostic.settings = {
