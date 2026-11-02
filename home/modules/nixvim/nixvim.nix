@@ -95,7 +95,7 @@
 			{
 				mode = "t";
 					key = "<C-r>+";
-					action = ''<cmd>lua local data = vim.g.clipboard.paste['+'](); if data and #data > 0 then local text = table.concat(data, "\n"); if text ~= "" then vim.api.nvim_chan_send(vim.b.terminal_job_id, text) end end<CR>'';
+					action = ''<cmd>lua local data = vim.fn.getreg('+'); if data and data ~= "" then vim.api.nvim_chan_send(vim.b.terminal_job_id, data) end<CR>'';
 					options = {
 						desc = "Paste raw text directly to terminal channel";
 						silent = true;
