@@ -75,7 +75,7 @@
 				key = "P";
 			}
 			{
-				mode = [ "n" "v" "i" ];
+				mode = [ "n" "v"];
 				key = "<Down>";
 				action = "v:count == 0 ? 'gj' : 'j'";
 				options = {
@@ -84,7 +84,7 @@
 				};
 			}
 			{
-				mode = [ "n" "v" "i" ];
+				mode = [ "n" "v"];
 				key = "<Up>";
 				action = "v:count == 0 ? 'gk' : 'k'";
 				options = {
