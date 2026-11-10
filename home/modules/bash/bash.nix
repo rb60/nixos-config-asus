@@ -8,8 +8,8 @@
 		};
 		initExtra = ''
 				if [[ $- == *i* ]]; then
-				if [[ -f ${pkgs.ble-sh}/share/blesh/ble.sh ]]; then
-					source ${pkgs.ble-sh}/share/blesh/ble.sh --noattach
+				if [[ -f ${pkgs.blesh}/share/blesh/ble.sh ]]; then
+					source ${pkgs.blesh}/share/blesh/ble.sh --noattach
 						ble-attach
 						fi
 						fi
