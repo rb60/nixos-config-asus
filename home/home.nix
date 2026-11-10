@@ -14,7 +14,8 @@
 			pkgs.gajim
 			pkgs.qbittorrent
 			pkgs.anydesk
-			pkgs.blesh];
+			pkgs.blesh
+			pkgs.wl-clipboard];
 	};
 
 	
