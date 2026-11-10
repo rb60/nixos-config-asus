@@ -10,7 +10,7 @@
 				if [[ $- == *i* ]]; then
 				if [[ -f ${pkgs.blesh}/share/blesh/ble.sh ]]; then
 					source ${pkgs.blesh}/share/blesh/ble.sh --noattach
-						ble-opt clipboard=clipboard
+						bleopt clipboard=clipboard
 						ble-attach
 						fi
 						fi
