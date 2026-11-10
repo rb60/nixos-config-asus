@@ -17,7 +17,7 @@
 								printf '%s' "''${_ble_edit_kill_ring[0]}" | wl-copy
 							fi
 						}
-						ble-bind -m emacs 'M-w' blerc/copy-to-clipboard
+						ble-bind -m emacs -f 'M-w' blerc/copy-to-clipboard
 
 					ble-attach
 				fi
