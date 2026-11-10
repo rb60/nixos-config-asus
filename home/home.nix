@@ -13,7 +13,8 @@
 			pkgs.freecad
 			pkgs.gajim
 			pkgs.qbittorrent
-			pkgs.anydesk];
+			pkgs.anydesk
+			pkgs.blesh];
 	};
 
 	
