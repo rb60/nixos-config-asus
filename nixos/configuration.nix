@@ -274,6 +274,7 @@
     jsonfmt
     texliveFull
     ltex-ls
+    redis
     ];
 
 
