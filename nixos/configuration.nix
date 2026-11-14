@@ -303,20 +303,29 @@
     ltex-ls
     redis
     (symlinkJoin {
-      name = "unityhub";
+      name = "unityhub-wrapped";
       paths = [ unityhub ];
       nativeBuildInputs = [ makeWrapper ];
       postBuild = ''
       wrapProgram $out/bin/unityhub \
         --suffix LD_LIBRARY_PATH : "/run/current-system/sw/share/nix-ld/lib"
 
-      for desktop in "$out"/share/applications/*.desktop; do
-        if [ -L "$desktop" ]; then
-          target=$(readlink -f "$desktop")
-          rm "$desktop"
-          sed "s|${unityhub}/bin/unityhub|$out/bin/unityhub|g" "$target" > "$desktop"
-        fi
-      done      '';
+     if [ -L "$out/share" ]; then
+        real_share=$(readlink -f "$out/share")
+        rm "$out/share"
+        mkdir -p "$out/share"
+        cp -rs "$real_share"/* "$out/share/"
+      fi
+
+      if [ -e "$out/share/applications" ]; then
+        real_apps=$(readlink -f "$out/share/applications")
+        rm -rf "$out/share/applications"
+        mkdir -p "$out/share/applications"
+        for f in "$real_apps"/*.desktop; do
+          sed -E "s|^Exec=.*unityhub|Exec=$out/bin/unityhub|g" "$f" > "$out/share/applications/$(basename "$f")"
+        done
+      fi
+      '';
      })
     ];
 
