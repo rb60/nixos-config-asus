@@ -303,30 +303,30 @@
     ltex-ls
     redis
     (symlinkJoin {
-      name = "unityhub-wrapped";
-      paths = [ unityhub ];
-      nativeBuildInputs = [ makeWrapper ];
-      postBuild = ''
-      wrapProgram $out/bin/unityhub \
-        --suffix LD_LIBRARY_PATH : "/run/current-system/sw/share/nix-ld/lib"
+     name = "unityhub-wrapped";
+     paths = [
+     (makeDesktopItem {
+      name = "unityhub";
+      desktopName = "Unity Hub";
+      genericName = "Unity Game Engine Hub";
+      comment = "Manage your Unity projects and installations";
+      exec = "unityhub %U";
+      icon = "unityhub";
+      terminal = false;
+      type = "Application";
+      categories = [ "Development" "IDE" ];
+      mimeTypes = [ "x-scheme-handler/unityhub" ];
+      })
+     unityhub
+     ];
+     nativeBuildInputs = [ makeWrapper ];
+     postBuild = ''
+     wrapProgram $out/bin/unityhub \
+     --suffix LD_LIBRARY_PATH : "/run/current-system/sw/share/nix-ld/lib"
 
-     if [ -L "$out/share" ]; then
-        real_share=$(readlink -f "$out/share")
-        rm "$out/share"
-        mkdir -p "$out/share"
-        cp -rs "$real_share"/* "$out/share/"
-      fi
-
-      if [ -e "$out/share/applications" ]; then
-        real_apps=$(readlink -f "$out/share/applications")
-        rm -rf "$out/share/applications"
-        mkdir -p "$out/share/applications"
-        for f in "$real_apps"/*.desktop; do
-          sed -E "s|^Exec=.*unityhub|Exec=$out/bin/unityhub|g" "$f" > "$out/share/applications/$(basename "$f")"
-        done
-      fi
-      '';
-     })
+     find "$out/share/applications" ! -name "unityhub.desktop" -delete
+     '';
+    })
     ];
 
 
