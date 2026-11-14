@@ -323,8 +323,6 @@
      postBuild = ''
      wrapProgram $out/bin/unityhub \
      --suffix LD_LIBRARY_PATH : "/run/current-system/sw/share/nix-ld/lib"
-
-     find "$out/share/applications" ! -name "unityhub.desktop" -delete
      '';
     })
     ];
