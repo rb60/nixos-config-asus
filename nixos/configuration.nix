@@ -276,6 +276,7 @@
     texliveFull
     ltex-ls
     redis
+    unityhub
     ];
 
 
