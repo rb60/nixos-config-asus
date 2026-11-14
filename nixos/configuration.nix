@@ -196,6 +196,32 @@
   users.extraGroups.vboxusers.members = [ "tima" ];
 
   programs.nix-ld.enable = true;
+  programs.nix-ld.libraries = with pkgs; [
+    ncurses
+    stdenv.cc.cc.lib
+    zlib
+    zstd
+    openssl
+    curl
+    icu
+    util-linux
+    libxml2
+    glib
+    fontconfig
+    freetype
+    harfbuzz
+    libxkbcommon
+    xorg.libX11
+    xorg.libXcursor
+    xorg.libXrandr
+    xorg.libXi
+    xorg.libXext
+    xorg.libXfixes
+    xorg.libXrender
+    libGL
+    vulkan-loader
+    wayland
+  ];
 
   #programs.dconf.enable = true;  
   environment.systemPackages = with pkgs; [
