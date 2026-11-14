@@ -308,8 +308,15 @@
       nativeBuildInputs = [ makeWrapper ];
       postBuild = ''
       wrapProgram $out/bin/unityhub \
-      --suffix LD_LIBRARY_PATH : "/run/current-system/sw/share/nix-ld/lib"
-      '';
+        --suffix LD_LIBRARY_PATH : "/run/current-system/sw/share/nix-ld/lib"
+
+      for desktop in "$out"/share/applications/*.desktop; do
+        if [ -L "$desktop" ]; then
+          target=$(readlink -f "$desktop")
+          rm "$desktop"
+          sed "s|${unityhub}/bin/unityhub|$out/bin/unityhub|g" "$target" > "$desktop"
+        fi
+      done      '';
      })
     ];
 
