@@ -302,7 +302,15 @@
     texliveFull
     ltex-ls
     redis
-    unityhub
+    (symlinkJoin {
+      name = "unityhub";
+      paths = [ unityhub ];
+      nativeBuildInputs = [ makeWrapper ];
+      postBuild = ''
+      wrapProgram $out/bin/unityhub \
+      --suffix LD_LIBRARY_PATH : "/run/current-system/sw/share/nix-ld/lib"
+      '';
+     })
     ];
 
 
