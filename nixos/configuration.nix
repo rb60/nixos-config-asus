@@ -308,6 +308,7 @@
     ltex-ls
     redis
     hplipWithPlugin
+    usb-modeswitch
     (symlinkJoin {
      name = "unityhub-wrapped";
      paths = [
