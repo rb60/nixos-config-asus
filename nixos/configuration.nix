@@ -125,6 +125,11 @@
 	  openFirewall = true;
   };
 
+  services.udev = {
+    enable = true;
+    packages = [ pkgs.hplipWithPlugin ];
+  };
+
   programs.firefox = {
   	enable = true;
 	policies.ExtensionSettings = 
