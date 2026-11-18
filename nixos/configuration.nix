@@ -116,7 +116,8 @@
 	drivers = [pkgs.canon-cups-ufr2
 			pkgs.canon-capt
 			pkgs.cups-bjnp
-			pkgs.hplip];
+			pkgs.hplip
+			pkgs.hplipWithPlugin];
   };
 
 
@@ -212,13 +213,13 @@
     freetype
     harfbuzz
     libxkbcommon
-    xorg.libX11
-    xorg.libXcursor
-    xorg.libXrandr
-    xorg.libXi
-    xorg.libXext
-    xorg.libXfixes
-    xorg.libXrender
+    libx11
+    libxcursor
+    libxrandr
+    libxi
+    libxext
+    libxfixes
+    libxrender
     libGL
     vulkan-loader
     wayland
