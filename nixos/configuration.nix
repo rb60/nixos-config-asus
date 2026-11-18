@@ -115,7 +115,8 @@
   	enable = true;
 	drivers = [pkgs.canon-cups-ufr2
 			pkgs.canon-capt
-			pkgs.cups-bjnp];
+			pkgs.cups-bjnp
+			pkgs.hplip];
   };
 
 
