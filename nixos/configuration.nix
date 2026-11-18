@@ -116,11 +116,14 @@
 	drivers = [pkgs.canon-cups-ufr2
 			pkgs.canon-capt
 			pkgs.cups-bjnp
-			pkgs.hplip
 			pkgs.hplipWithPlugin];
   };
 
-
+  services.avahi = {
+	  enable = true;
+	  nssmdns4 = true;
+	  openFirewall = true;
+  };
 
   programs.firefox = {
   	enable = true;
@@ -304,6 +307,7 @@
     texliveFull
     ltex-ls
     redis
+    hplipWithPlugin
     (symlinkJoin {
      name = "unityhub-wrapped";
      paths = [
